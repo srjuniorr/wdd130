@@ -13,7 +13,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 header,
