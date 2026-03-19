@@ -21,6 +21,8 @@ main,
 footer {
     width: 840px;
     margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 h1,
@@ -37,8 +39,19 @@ article {
     padding: 8px;
 }
 
+section {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
 }
 
 .hero {
