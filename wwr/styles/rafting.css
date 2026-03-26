@@ -1,15 +1,18 @@
 :root {
     --primary-color: #264653;
+    /* Dark Blue */
     --accent-color: #e76f51;
+    /* Terracotta */
     --secondary-color: #f0f4f8;
+    /* Light Gray/Blue background */
     --white: #ffffff;
-    --black: #000000;
     --hero-bg: rgba(255, 255, 255, 0.8);
     --header-accent-bg: rgba(231, 111, 81, 0.7);
     --heading-font: "Roboto", Helvetica, sans-serif;
     --body-font: "Open Sans", Arial, sans-serif;
 }
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +24,7 @@ body {
     color: var(--primary-color);
 }
 
+/* Layout Containers */
 header,
 main,
 footer {
@@ -38,8 +42,13 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
     padding: 8px;
+}
+
+p,
+section,
+article {
+    margin: 16px;
 }
 
 section {
@@ -49,12 +58,14 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Styles (Grid) */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
     color: var(--white);
+    /* Fixes the 1:1 contrast ratio warning */
     padding: 10px 30px;
     border-bottom: 5px solid var(--accent-color);
 }
@@ -65,6 +76,7 @@ header img {
     justify-self: start;
 }
 
+/* Main Navigation (Flexbox) */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -87,6 +99,7 @@ nav a:hover {
     border-radius: 4px;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -123,6 +136,7 @@ h1 {
     margin-left: 15px;
 }
 
+/* History Section (Grid) */
 .history-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,6 +151,7 @@ h1 {
     border-radius: 10px;
 }
 
+/* Adventure Section (Flexbox) */
 .adventures {
     padding: 20px;
     text-align: center;
@@ -166,6 +181,7 @@ h1 {
     font-size: 0.9rem;
 }
 
+/* Footer Styles (Flexbox) */
 footer {
     display: flex;
     justify-content: space-between;
@@ -178,15 +194,5 @@ footer {
 
 .socialmedia {
     display: flex;
-    gap: 15px;
-}
-
-.socialmedia img {
-    width: 35px;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.socialmedia img:hover {
-    transform: scale(1.2);
+    gap: 10px;
 }
