@@ -127,12 +127,21 @@ h1 {
     margin-left: 15px;
 }
 
+.history h2 {
+    text-align: center;
+}
+
 .history-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.history-container p {
+    margin: 0;
+    padding: 0;
 }
 
 .history-container img {
@@ -144,6 +153,10 @@ h1 {
 .adventures {
     padding: 20px;
     text-align: center;
+}
+
+.adventures h2 {
+    margin-bottom: 25px;
 }
 
 .adventure-container {
