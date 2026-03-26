@@ -195,4 +195,10 @@ footer {
 .socialmedia {
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
 }
