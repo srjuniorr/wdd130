@@ -506,7 +506,7 @@ footer {
     object-fit: cover;
 }
 
-.trip-descr h3 {
+.trip-descr h2 {
     margin-bottom: 15px;
     color: var(--accent-color);
 }
